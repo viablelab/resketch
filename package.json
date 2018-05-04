@@ -1,0 +1,8 @@
+{
+  "name": "resketch",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "git@github.com:viablelab/resketch.git",
+  "author": "Johan West <johan.west@viablelab.com>",
+  "license": "MIT"
+}

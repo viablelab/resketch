@@ -1,0 +1,52 @@
+☐ As a developer, I would like to include Resketch components via npm
+  ✔ Secure `resketch` namespace on npmjs.com @done(2018-05-29 21:26)
+  ✔ Decide on whether to go with `styled-components` (or something else) @done(2018-05-30 08:24)
+  ✔ Add test dependencies @done(2018-05-30 13:57)
+  ✔ Add Storybook for initial development @done(2018-05-30 13:57)
+  ☐ Create components:
+    ☐ Breadcrumb
+    ☐ Button
+    ☐ Card
+    ☐ Checkbox
+    ☐ Collapsible
+    ☐ Data Table
+    ☐ Link
+    ☐ List (like Material UI?)
+    ☐ Loader
+    ☐ Modal
+    ☐ Notification
+    ☐ Overflow Menu
+    ☐ Pagination
+    ☐ Progress Indicator
+    ☐ Radio Button
+    ☐ Search
+    ☐ Select
+    ☐ Slider
+    ☐ Structured List
+    ☐ Tabs
+    ☐ Tag
+    ☐ Text (paragraph, heading, etc.)
+    ☐ Text Field (input, textarea, autocomplete?)
+    ☐ Toggle
+    ☐ Tooltip
+  ☐ Publish version 0.1
+☐ As a developer/designer, I would like to see which Resketch components exists
+  ☐ Create a documentation page listing each component
+☐ As a developer/designer, I would like to see an example usage of each Resketch component
+  ☐ Create auto-generated documentation pages for each component
+☐ As a developer, I would like to see what properties are availables on each Resketch component
+  ☐ Include an informative prop type listing for each component
+☐ As a designer, I would like to include Resketch symbols via Sketch
+  ☐ Export Sketch symbols locally
+  ☐ Discuss ways to distribute Sketch files
+☐ As a consumer, I would like to be dazzled by a nice website
+  ☐ Create a compelling landing page
+  ☐ Refine the documentation page(s)
+☐ As a maintainer I would like to automate releases
+  ☐ Implement `semantic-release`
+  ☐ Use a CI/CD service
+  ☐ Try to get Sketch symbols exported to whatever distribution channel is relevant
+☐ As a maintainer, I would like code consistency
+  ☐ Implement `prettier` configuration (& git hook?)
+  ☐ Implement `eslint` configuration (& script hook)
+  ☐ Create a CONTRIBUTING file

@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders properly 1`] = `
+.c0 {
+  border-top: 1px solid silver;
+}
+
+.c0:last-of-type {
+  border-bottom: 1px solid silver;
+}
+
+.c1 {
+  background-color: transparent;
+  border-style: none;
+  border-width: 0;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c1:focus {
+  outline-style: none;
+  outline-width: 0;
+}
+
+.c2 {
+  margin: 0;
+}
+
+.c3 {
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid steelblue;
+  border-right: 2px solid steelblue;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: -webkit-transform 195ms ease;
+  -webkit-transition: transform 195ms ease;
+  transition: transform 195ms ease;
+}
+
+<div
+  className="c0"
+>
+  <button
+    className="c1"
+    onClick={[Function]}
+  >
+    <p
+      className="c2"
+    >
+      Title
+    </p>
+    <div
+      className="c3"
+    />
+  </button>
+</div>
+`;
+
+exports[`renders properly 2`] = `
+.c0 {
+  border-top: 1px solid silver;
+}
+
+.c0:last-of-type {
+  border-bottom: 1px solid silver;
+}
+
+.c1 {
+  background-color: transparent;
+  border-style: none;
+  border-width: 0;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c1:focus {
+  outline-style: none;
+  outline-width: 0;
+}
+
+.c2 {
+  margin: 0;
+}
+
+.c3 {
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid steelblue;
+  border-right: 2px solid steelblue;
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+  -webkit-transition: -webkit-transform 195ms ease;
+  -webkit-transition: transform 195ms ease;
+  transition: transform 195ms ease;
+}
+
+.c4 {
+  padding: 0.5rem;
+}
+
+<div
+  className="c0"
+>
+  <button
+    className="c1"
+    onClick={[Function]}
+  >
+    <p
+      className="c2"
+    >
+      Title
+    </p>
+    <div
+      className="c3"
+    />
+  </button>
+  <div
+    className="c4"
+  >
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque labore neque, ab iste! Necessitatibus debitis alias est quisquam unde iste hic cupiditate earum, quis itaque eligendi voluptatem. Ea, laudantium, deserunt.
+    </p>
+  </div>
+</div>
+`;

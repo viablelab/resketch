@@ -54,7 +54,7 @@
     "build": "run-p build:*",
     "build:components": "babel src -d dist --ignore './**/*.stories.js,./**/*.test.js'",
     "build:styles": "gulp styles",
-    "dev": "start-storybook -p 9001 -c .storybook",
+    "dev": "start-storybook -p 9001 -c .storybook -o .out",
     "export": "build-storybook -c .storybook",
     "prettier:base": "prettier .storybook/** src/**",
     "prettier:check": "npm run prettier:base -- --list-different",

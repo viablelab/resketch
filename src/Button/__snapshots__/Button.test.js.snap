@@ -1,12 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders properly 1`] = `
-.c0 {
-  padding: 12px;
-}
-
 <button
-  className="c0"
+  class="button"
 >
   Button label
 </button>

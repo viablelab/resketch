@@ -43,10 +43,10 @@
   ☐ Create a compelling landing page
   ☐ Refine the documentation page(s)
 ☐ As a maintainer I would like to automate releases
-  ☐ Implement `semantic-release`
-  ☐ Use a CI/CD service
+  ✔ Implement `semantic-release` @done (2018-8-5 20:06:24)
+  ✔ Use a CI/CD service @done (2018-8-5 20:06:25)
+  ✔ Investigate 2-factor authentication @done (2018-8-5 20:06:29)
   ☐ Try to get Sketch symbols exported to whatever distribution channel is relevant
 ☐ As a maintainer, I would like code consistency
-  ☐ Implement `prettier` configuration (& git hook?)
-  ☐ Implement `eslint` configuration (& script hook)
+  ✔ Implement `prettier` configuration @done (2018-8-5 20:09:07)
   ☐ Create a CONTRIBUTING file

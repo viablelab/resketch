@@ -1,0 +1,9 @@
+.label {
+  color: var(--primary-color);
+  cursor: pointer;
+  line-height: 1.5;
+}
+
+.label--emphasized {
+  font-weight: 600;
+}

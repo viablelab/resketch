@@ -1,8 +1,8 @@
 import React from 'react';
 import { render } from 'react-testing-library';
-import Radio from './Radio';
+import Button from './Button';
 
 test('renders properly', () => {
-  const { container } = render(<Radio />);
+  const { container } = render(<Button>Button label</Button>);
   expect(container.firstChild).toMatchSnapshot();
 });

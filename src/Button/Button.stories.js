@@ -8,6 +8,5 @@ storiesOf('Button', module).add('Example', () => {
     children: text('children', 'Click Me'),
     disabled: boolean('disabled', false),
     look: select('look', [null, 'ghost', 'text']) || undefined,
-    size: select('size', [null, 'small']) || undefined,
   });
 });

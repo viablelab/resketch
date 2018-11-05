@@ -7,12 +7,7 @@ export default function Button(props) {
 
   return (
     <button
-      className={cx([
-        'button',
-        look && `button--${look}`,
-        size && `button--${size}`,
-        className,
-      ])}
+      className={cx(['button', look && `button--${look}`, className])}
       {...rest}
     />
   );
@@ -21,5 +16,4 @@ export default function Button(props) {
 Button.displayName = 'Button';
 Button.propTypes = {
   look: PropTypes.oneOf(['ghost', 'text']),
-  size: PropTypes.oneOf(['small']),
 };

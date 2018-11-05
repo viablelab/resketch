@@ -57,5 +57,6 @@ typings/
 # dotenv environment variables file
 .env
 
-.out/
-dist/
+# Build
+/dist
+/lib

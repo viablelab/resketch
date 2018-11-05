@@ -1,0 +1,19 @@
+.button {
+  @apply .bg-primary .text-on-primary .border-primary;
+  @apply .rounded-1 .cursor-pointer;
+  @apply .text-base .uppercase .font-w500;
+  @apply .h-4 .px-3;
+}
+
+.button:disabled {
+  @apply .cursor-not-allowed opacity-50;
+}
+
+.button--ghost,
+.button--text {
+  @apply .bg-transparent .text-on-secondary;
+}
+
+.button--ghost {
+  @apply .border-2 .border-primary;
+}

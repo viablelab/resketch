@@ -1,16 +1,7 @@
-const themeVariables = require('./theme');
+const tailwind = require('tailwindcss');
+const autoprefixer = require('autoprefixer');
+const atImport = require('postcss-import');
 
 module.exports = {
-  plugins: [
-    require('postcss-preset-env')({
-      stage: 3,
-      browsers: 'last 2 versions',
-      features: {
-        'custom-properties': {
-          preserve: false,
-          variables: themeVariables,
-        },
-      },
-    }),
-  ],
+  plugins: [atImport(), tailwind('./tailwind.js'), autoprefixer()],
 };

@@ -1,14 +1,14 @@
 const gulp = require('gulp');
 const sequence = require('gulp-sequence');
 const sourcemaps = require('gulp-sourcemaps');
-const concat = require('gulp-concat');
+const rename = require('gulp-rename');
 const insert = require('gulp-insert');
 const postcss = require('gulp-postcss');
 const cssnano = require('gulp-cssnano');
 const del = require('del');
 const pkg = require('./package.json');
 
-const cssSrc = 'src/**/*.css';
+const cssSrc = 'css/main.css';
 const comment = filename => `/**
  * Resketch v${pkg.version}
  * ${filename}
@@ -21,7 +21,7 @@ gulp.task('styles:expanded', () => {
     .src(cssSrc)
     .pipe(sourcemaps.init())
     .pipe(postcss())
-    .pipe(concat(filename))
+    .pipe(rename(filename))
     .pipe(insert.prepend(comment(filename)))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('dist'));
@@ -33,7 +33,7 @@ gulp.task('styles:minified', () => {
     .src(cssSrc)
     .pipe(sourcemaps.init())
     .pipe(postcss())
-    .pipe(concat(filename))
+    .pipe(rename(filename))
     .pipe(cssnano())
     .pipe(insert.prepend(comment(filename)))
     .pipe(sourcemaps.write('.'))

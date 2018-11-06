@@ -9,7 +9,9 @@ export default function Select(props) {
     className,
     disabled,
     iconClassName,
+    iconProps,
     inputClassName,
+    inputProps,
     value,
   } = props;
 
@@ -23,6 +25,7 @@ export default function Select(props) {
       ])}
     >
       <select
+        {...inputProps}
         className={cx('select__select-input', inputClassName)}
         disabled={disabled}
         value={value}
@@ -30,6 +33,7 @@ export default function Select(props) {
         {children}
       </select>
       <svg
+        {...iconProps}
         className={cx('select__icon', iconClassName)}
         viewBox="0 0 10 12"
         version="1.1"
@@ -52,10 +56,14 @@ Select.propTypes = {
   className: PropTypes.string,
   disabled: PropTypes.bool,
   iconClassName: PropTypes.string,
+  iconProps: PropTypes.object,
   inputClassName: PropTypes.string,
+  inputProps: PropTypes.object,
   value: PropTypes.string,
 };
 Select.defaultProps = {
   block: false,
   disabled: false,
+  iconProps: {},
+  inputProps: {},
 };

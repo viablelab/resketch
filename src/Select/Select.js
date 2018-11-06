@@ -13,10 +13,12 @@ export default function Select(props) {
     inputClassName,
     inputProps,
     value,
+    ...rest
   } = props;
 
   return (
     <div
+      {...rest}
       className={cx([
         'select',
         block && 'select--block',

@@ -1,0 +1,37 @@
+.select {
+  @apply .inline-block .bg-secondary .text-on-secondary .rounded-1;
+  @apply .h-4 .text-base .overflow-hidden .align-middle .relative;
+  @apply .max-w-full;
+
+  box-sizing: border-box;
+  width: 300px;
+}
+
+.select__select-input {
+  @apply .appearance-none .bg-transparent .border-none .shadow-0;
+  @apply .h-full .w-full .pl-1 .cursor-pointer .text-on-secondary;
+
+  padding-right: 2.25em;
+}
+
+.select__icon {
+  @apply .fill-current .absolute;
+
+  width: 0.625em;
+  height: 0.75em;
+  top: 50%;
+  right: 0.75em;
+  transform: translateY(-50%);
+}
+
+.select--block {
+  @apply .block .w-full;
+}
+
+.select--disabled {
+  @apply .opacity-50;
+}
+
+.select__select-input:disabled {
+  @apply .cursor-not-allowed;
+}

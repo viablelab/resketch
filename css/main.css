@@ -19,6 +19,7 @@
  */
 @import 'components/button';
 @import 'components/input';
+@import 'components/select';
 
 /**
  * This injects all of Tailwind's utility classes, generated based on your

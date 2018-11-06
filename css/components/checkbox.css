@@ -1,0 +1,12 @@
+.checkbox {
+  /* .. */
+}
+
+/* .input {
+  @apply .bg-secondary .text-on-secondary .rounded-1;
+  @apply .h-4 .px-1 .text-base;
+}
+
+.input:disabled {
+  @apply .cursor-not-allowed .opacity-50;
+} */

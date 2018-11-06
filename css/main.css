@@ -18,6 +18,7 @@
  * override them.
  */
 @import 'components/button';
+@import 'components/checkbox';
 @import 'components/input';
 @import 'components/select';
 

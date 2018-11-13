@@ -8,5 +8,5 @@ storiesOf('Checkbox', module).add('Example', () => {
     disabled: boolean('disabled', false),
   };
 
-  return <Checkbox {...props}>I am a Checkbox</Checkbox>;
+  return <Checkbox {...props}>Toggle me</Checkbox>;
 });

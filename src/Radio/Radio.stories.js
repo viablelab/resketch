@@ -1,12 +1,12 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { boolean } from '@storybook/addon-knobs';
-import Checkbox from './Checkbox';
+import Radio from './Radio';
 
-storiesOf('Checkbox', module).add('Example', () => {
+storiesOf('Radio', module).add('Example', () => {
   const props = {
     disabled: boolean('disabled', false),
   };
 
-  return <Checkbox {...props}>Toggle me</Checkbox>;
+  return <Radio {...props}>Toggle me</Radio>;
 });

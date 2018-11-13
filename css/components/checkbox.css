@@ -25,14 +25,20 @@
 }
 
 .checkbox__input:checked + .checkbox__label::after {
-  /* ... */
+  @apply .absolute .inline-block;
+
+  content: '';
+  top: 0.4375em;
+  left: 0.375em;
+  width: 0.375em;
+  height: 0.5em;
+  transform-origin: center;
+  transform: rotate(45deg);
+  background-color: transparent;
+  border-right: 0.125em solid white;
+  border-bottom: 0.125em solid white;
 }
 
-/* .input {
-  @apply .bg-secondary .text-on-secondary .rounded-1;
-  @apply .h-4 .px-1 .text-base;
-}
-
-.input:disabled {
+.checkbox__input:disabled + .checkbox__label {
   @apply .cursor-not-allowed .opacity-50;
-} */
+}

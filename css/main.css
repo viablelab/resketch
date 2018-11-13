@@ -20,6 +20,7 @@
 @import 'components/button';
 @import 'components/checkbox';
 @import 'components/input';
+@import 'components/radio';
 @import 'components/select';
 
 /**

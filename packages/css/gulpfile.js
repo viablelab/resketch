@@ -1,5 +1,4 @@
 const gulp = require('gulp');
-const sequence = require('gulp-sequence');
 const sourcemaps = require('gulp-sourcemaps');
 const rename = require('gulp-rename');
 const insert = require('gulp-insert');
@@ -8,7 +7,7 @@ const cssnano = require('gulp-cssnano');
 const del = require('del');
 const pkg = require('./package.json');
 
-const cssSrc = 'css/main.css';
+const cssSrc = 'src/main.css';
 const comment = filename => `/**
  * Resketch v${pkg.version}
  * ${filename}
@@ -42,4 +41,7 @@ gulp.task('styles:minified', () => {
 
 gulp.task('clean', () => del(['dist/*.css', 'dist/*.css.map']));
 
-gulp.task('styles', sequence('clean', ['styles:expanded', 'styles:minified']));
+gulp.task(
+  'styles',
+  gulp.series('clean', gulp.parallel('styles:expanded', 'styles:minified'))
+);

@@ -1,0 +1,53 @@
+{
+  "name": "@resketch/react",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "repository": "git@github.com:viablelab/resketch.git",
+  "license": "MIT",
+  "contributors": [
+    "Johan West <johan.west@viablelab.com>"
+  ],
+  "files": [
+    "dist",
+    "src"
+  ],
+  "peerDependencies": {
+    "react": "^15.0.0 || ^16.0.0",
+    "react-dom": "^15.0.0 || ^16.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge",
+    "babel-jest": "^24.0.0",
+    "jest": "^24.0.0",
+    "jest-dom": "^3.0.0",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-testing-library": "^5.2.3"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "prop-types": "^15.6.2"
+  },
+  "scripts": {
+    "build": "babel src -d dist --ignore './**/*.test.js'",
+    "test": "jest",
+    "test:watch": "npm run test -- --watch"
+  },
+  "browserslist": {
+    "development": [
+      "last 2 chrome versions",
+      "last 2 firefox versions",
+      "last 2 edge versions"
+    ],
+    "production": [
+      ">1%",
+      "last 4 versions",
+      "Firefox ESR",
+      "not ie < 11"
+    ]
+  }
+}

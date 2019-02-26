@@ -62,4 +62,6 @@ typings/
 
 # Build
 /dist
+/packages/*/dist
+/storybook/.out
 /lib

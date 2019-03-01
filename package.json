@@ -1,8 +1,24 @@
 {
-  "name": "resketch",
-  "version": "0.0.1",
-  "main": "index.js",
+  "private": true,
+  "license": "MIT",
   "repository": "git@github.com:viablelab/resketch.git",
-  "author": "Johan West <johan.west@viablelab.com>",
-  "license": "MIT"
+  "workspaces": [
+    "packages/*",
+    "storybook"
+  ],
+  "devDependencies": {
+    "lerna": "^3.13.1",
+    "lerna-changelog": "^0.8.2",
+    "prettier": "^1.16.4"
+  },
+  "scripts": {
+    "build": "lerna run build",
+    "changelog": "lerna-changelog",
+    "export": "yarn workspace @local/storybook build",
+    "prettier": "prettier --check 'packages/**/*.{css,js}'",
+    "release": "lerna publish",
+    "test": "yarn prettier && lerna run test",
+    "prerelease": "yarn build",
+    "prebuild": "yarn test"
+  }
 }

@@ -31,7 +31,8 @@
     "tailwindcss": "^0.7.2"
   },
   "scripts": {
-    "build": "gulp styles"
+    "build": "gulp styles",
+    "prepublishOnly": "yarn build"
   },
   "gitHead": "15a462ac6144f3c41c43129c0ef6bcbc667dbac8"
 }

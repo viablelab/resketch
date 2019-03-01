@@ -37,6 +37,7 @@
   },
   "scripts": {
     "build": "babel src -d dist --ignore './**/*.test.js'",
+    "prepublishOnly": "yarn build",
     "test": "jest",
     "test:watch": "npm run test -- --watch"
   },

@@ -49,5 +49,6 @@
       "Firefox ESR",
       "not ie < 11"
     ]
-  }
+  },
+  "gitHead": "15a462ac6144f3c41c43129c0ef6bcbc667dbac8"
 }

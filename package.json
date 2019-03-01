@@ -14,6 +14,7 @@
   "scripts": {
     "build": "lerna run build",
     "changelog": "lerna-changelog",
+    "dev": "yarn workspace @local/storybook start",
     "export": "yarn workspace @local/storybook build",
     "prettier": "prettier --check 'packages/**/*.{css,js}'",
     "release": "lerna publish",

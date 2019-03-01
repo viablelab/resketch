@@ -1,6 +1,7 @@
 {
   "private": true,
   "license": "MIT",
+  "repository": "git@github.com:viablelab/resketch.git",
   "workspaces": [
     "packages/*",
     "storybook"
@@ -10,17 +11,11 @@
     "lerna-changelog": "^0.8.2",
     "prettier": "^1.14.3"
   },
-  "dependencies": {
-    "@resketch/css": "*",
-    "@resketch/react": "*"
-  },
   "scripts": {
     "build": "lerna run build",
     "changelog": "lerna-changelog",
     "export": "yarn workspace @local/storybook build",
-    "prettier:base": "prettier packages/**",
-    "prettier:check": "npm run prettier:base -- --list-different",
-    "prettier:write": "npm run prettier:base -- --write",
-    "test": "lerna run test"
+    "prettier": "prettier --check 'packages/**/*.{css,js}'",
+    "test": "yarn prettier && lerna run test"
   }
 }

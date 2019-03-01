@@ -7,5 +7,6 @@ Object {
   "Input": [Function],
   "Radio": [Function],
   "Select": [Function],
+  "Switch": [Function],
 }
 `;

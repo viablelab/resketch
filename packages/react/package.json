@@ -7,6 +7,9 @@
   "contributors": [
     "Johan West <johan.west@viablelab.com>"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "dist",
     "src"

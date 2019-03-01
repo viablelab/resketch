@@ -4,6 +4,9 @@
   "main": "dist/resketch.css",
   "repository": "git@github.com:viablelab/resketch.git",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "contributors": [
     "Johan West <johan.west@viablelab.com>"
   ],

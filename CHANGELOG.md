@@ -19,4 +19,3 @@
 #### Committers: 1
 
 - Johan West ([@mrwest808](https://github.com/mrwest808))
-  ✨ Done in 1.71s.

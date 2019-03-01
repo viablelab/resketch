@@ -84,7 +84,15 @@ const colors = {
 };
 
 const colorsFor = {
-  background: ['transparent', 'primary', 'secondary', 'surface'],
+  background: [
+    'transparent',
+    'primary',
+    'secondary',
+    'surface',
+    'on-primary',
+    'on-secondary',
+    'on-surface',
+  ],
   border: ['primary', 'secondary'],
   text: ['on-primary', 'on-secondary', 'on-surface'],
 };

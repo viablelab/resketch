@@ -22,6 +22,7 @@
 @import 'components/input';
 @import 'components/radio';
 @import 'components/select';
+@import 'components/switch';
 
 /**
  * This injects all of Tailwind's utility classes, generated based on your

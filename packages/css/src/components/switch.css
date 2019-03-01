@@ -1,0 +1,53 @@
+.switch {
+  @apply .relative;
+}
+
+.switch__input {
+  @apply .absolute .opacity-0;
+}
+
+.switch__label {
+  @apply .relative .inline-block .cursor-pointer;
+  @apply .leading-normal;
+
+  padding-left: 3em;
+}
+
+.switch__label::before {
+  @apply .absolute .inline-block;
+  @apply .bg-secondary;
+
+  content: '';
+  border-radius: 0.5625em; /* 25% of width */
+  box-shadow: inset 0 0 3px -1px config('colors.primary');
+  top: 0.1875em;
+  left: 0;
+  width: 2.25em;
+  height: 1.125em;
+  transition: background-color 225ms ease;
+}
+
+.switch__input:checked + .switch__label::before {
+  @apply .bg-primary;
+}
+
+.switch__label::after {
+  @apply .absolute .inline-block;
+  @apply .bg-on-primary;
+
+  content: '';
+  top: 0.375em;
+  left: 0.1875em;
+  width: 0.75em;
+  height: 0.75em;
+  border-radius: 0.375em;
+  transition: transform 300ms ease;
+}
+
+.switch__input:checked + .switch__label::after {
+  transform: translateX(1.125em);
+}
+
+.switch__input:disabled + .switch__label {
+  @apply .cursor-not-allowed .opacity-50;
+}

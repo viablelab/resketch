@@ -1,7 +1,14 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { boolean, select, text } from '@storybook/addon-knobs';
-import { Button, Checkbox, Input, Radio, Select } from '@resketch/react';
+import {
+  Button,
+  Checkbox,
+  Input,
+  Radio,
+  Select,
+  Switch,
+} from '@resketch/react';
 
 storiesOf('Button', module).add('Example', () => {
   return React.createElement(Button, {
@@ -44,4 +51,11 @@ storiesOf('Select', module).add('Example', () => {
       <option value="3">THREE</option>
     </Select>
   );
+});
+
+storiesOf('Switch', module).add('Example', () => {
+  const props = {
+    disabled: boolean('disabled', false),
+  };
+  return <Switch {...props}>Toggle me</Switch>;
 });

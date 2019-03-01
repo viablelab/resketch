@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'clsx';
 
-export default function Radio(props) {
+export default function Switch(props) {
   const {
     checked,
     children,
@@ -21,27 +21,27 @@ export default function Radio(props) {
   return (
     <label
       {...rest}
-      className={cx('radio', disabled && 'radio--disabled', className)}
+      className={cx('switch', disabled && 'switch--disabled', className)}
     >
       <input
         {...inputProps}
-        type="radio"
+        type="checkbox"
         checked={checked}
-        className={cx('radio__input', inputClassName)}
+        className={cx('switch__input', inputClassName)}
         disabled={disabled}
         id={id}
         name={name}
         value={value}
       />
-      <span {...labelProps} className={cx('radio__label', labelClassName)}>
+      <span {...labelProps} className={cx('switch__label', labelClassName)}>
         {children}
       </span>
     </label>
   );
 }
 
-Radio.displayName = 'Radio';
-Radio.propTypes = {
+Switch.displayName = 'Switch';
+Switch.propTypes = {
   checked: PropTypes.bool,
   children: PropTypes.node,
   className: PropTypes.string,
@@ -54,7 +54,7 @@ Radio.propTypes = {
   name: PropTypes.string,
   value: PropTypes.string,
 };
-Radio.defaultProps = {
+Switch.defaultProps = {
   disabled: false,
   inputProps: {},
   labelProps: {},

@@ -18,7 +18,6 @@
     "prettier": "prettier --check 'packages/**/*.{css,js}'",
     "release": "lerna publish",
     "test": "yarn prettier && lerna run test",
-    "prerelease": "yarn build",
-    "prebuild": "yarn test"
+    "prerelease": "yarn test"
   }
 }
